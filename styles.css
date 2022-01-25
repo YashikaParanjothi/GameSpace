@@ -1,0 +1,256 @@
+/* Main Page */
+#main {
+  background-color: #4FBDBA;
+}
+#main-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #632626;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DBEDF3;
+  margin: 5% auto;
+}
+
+.game-list {
+  padding: 0 3%;
+}
+.simon, .drumkit, .diceroll {
+	height: 250px;
+	width: 80%;
+	position: relative;
+  left: 10%;
+	border: 2px solid #35858B;
+}
+.simon:hover, .drumkit:hover, .diceroll:hover{
+	box-shadow: 2px 2px 5px 2px #AEFEFF;
+}
+.simon{
+	background: url('images/simon.jpg') no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+.drumkit{
+	background: url('images/drumset.jpg') no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+.diceroll{
+	background: url('images/diceroll.jpeg') no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.simon span, .drumkit span, .diceroll span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+.main-footer {
+  margin: 3% auto;
+  color: #DBEDF3;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.back-btn {
+  border: none;
+  background-color: #696969;
+  border-radius: 50%;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.goback {
+  text-align: center;
+}
+.back-btn:hover {
+  box-shadow: 2px 2px 5px 5px #D3D3D3;
+}
+
+/* Simon */
+#simon {
+  text-align: center;
+  background-color: #D6E5FA;
+}
+
+#simon #level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 2% 5% 0;
+  color: #0C1E7F;
+}
+
+#simon .container {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+#simon .btn {
+  margin: 25px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+#simon .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+#simon .red {
+  background-color: red;
+}
+
+#simon .green {
+  background-color: green;
+}
+
+#simon .blue {
+  background-color: blue;
+}
+
+#simon .yellow {
+  background-color: yellow;
+}
+
+.yespressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+/* Drum Kit */
+#drum {
+  text-align: center;
+  background-color: #D77FA1;
+}
+
+#drum h1 {
+  font-size: 4rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+.w {
+  background-image: url(images/tom1.png);
+}
+
+.a {
+  background-image: url(images/tom2.png);
+}
+
+.s {
+  background-image: url(images/tom3.png);
+}
+
+.d {
+  background-image: url(images/tom4.png);
+}
+
+.j {
+  background-image: url(images/snare.png);
+}
+
+.k {
+  background-image: url(images/crash.png);
+}
+
+.l {
+  background-image: url(images/kick.png);
+}
+
+#drum .set {
+  margin: 7% auto;
+}
+
+#drum .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+#drum .red {
+  color: red;
+}
+
+#drum .drum {
+  outline: none;
+  border: 10px solid #D6E5FA;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 7px;
+  background-color: white;
+}
+
+/* Dice Roll */
+
+#dice .container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#dice .dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+#dice {
+  background-color: #393E46;
+}
+
+#dice h1{
+  margin: 10px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ECCA3;
+}
+#dice h2 {
+  color: #808080;
+}
+#dice p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#dice img {
+  width: 80%;
+}
