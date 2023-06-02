@@ -1,0 +1,355 @@
+/* Main Page */
+#main {
+  background-image: url("images/mainBg.jpg");
+  backdrop-filter: blur(5px);
+
+}
+
+/* ------------Heading Animation------------ */
+.animate-charcter
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 3em;
+  margin: 3% 0 3% 0;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ---------Card Animation---------- */
+.flip-box {
+  background-color: transparent;
+  position: relative;
+  left: 10%;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  border-radius: 15%;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: grey;
+  color: black;
+}
+/* Style the back side */
+.flip-box-back {
+  background-color: black;
+  padding: 2em;
+  box-shadow: 2px 2px 2px 2px gray;
+  transform: rotateY(180deg);
+}
+.flip-box-back a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Card spacing */
+.game-list {
+  padding: 0 4%;
+}
+
+/* .simon, .drumkit, .diceroll {
+	height: 350px;
+	width: 100%;
+	position: relative;
+  left: 10%;
+	border: 2px solid gray;
+}
+.simon:hover, .drumkit:hover, .diceroll:hover{
+	box-shadow: 2px 2px 5px 2px gray;
+} */
+/* .simon{
+	background: url('images/simon.png') no-repeat;
+	background-position: center;
+  background-size: cover;
+} */
+/* .drumkit{
+	background: url('images/drumset.jpg') no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+.diceroll{
+	background: url('images/diceroll.jpg') no-repeat;
+	background-position: center;
+  background-size: cover;
+} */
+
+.flip-box-front span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+  height: 3.5rem;
+	text-align: center;
+	font-size: 1.5em;
+  padding-top: 0.3em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.5;
+}
+
+.main-footer {
+  margin: 2% auto;
+  color: #000;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight:bolder;
+}
+
+/* Back Button */
+.back-btn {
+  border: none;
+  background-color: #444;
+  border-radius: 50%;
+  color: #fff;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: .8;
+}
+.goback {
+  text-align: center;
+}
+.back-btn:hover {
+  box-shadow: 2px 2px 5px 5px #D3D3D3;
+}
+
+
+/* Simon */
+#simon {
+  text-align: center;
+  /* background-color: #D6E5FA; */
+  background-image: url(images/simonBg.png);
+}
+
+#simon #level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 3% 5% 3% 5%;
+  color: indigo;
+}
+
+#simon .container {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+#simon .btn {
+  margin: 25px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  /* border: 10px solid black; */
+  border-radius: 20%;
+}
+
+#simon .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+#simon .red {
+  /* background-color: red; */
+  background-image: url(images/red.jpg);
+}
+.red:hover {
+  box-shadow: 5px 5px 5px 5px red;
+}
+#simon .green {
+  background-image: url(images/green.png);
+}
+.green:hover {
+  box-shadow: 5px 5px 5px 5px green;
+}
+#simon .blue {
+  background-image: url(images/blue.jpg);
+}
+.blue:hover {
+  box-shadow: 5px 5px 5px 5px blue;
+}
+#simon .yellow {
+  background-image: url(images/yellow.png);
+}
+.yellow:hover {
+  box-shadow: 5px 5px 5px 5px yellow;
+}
+.yespressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+/* Drum Kit */
+#drum {
+  text-align: center;
+  background-image: url("images/drumBg.jpg");
+}
+
+#drum h1 {
+  font-size: 4rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+.w {
+  background-image: url(images/tom1.png);
+}
+
+.a {
+  background-image: url(images/tom2.png);
+}
+
+.s {
+  background-image: url(images/tom3.png);
+}
+
+.d {
+  background-image: url(images/tom4.png);
+}
+
+.j {
+  background-image: url(images/snare.png);
+}
+
+.k {
+  background-image: url(images/crash.png);
+}
+
+.l {
+  background-image: url(images/kick.png);
+}
+
+#drum .set {
+  margin: 7% auto;
+}
+
+#drum .game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+.drum:hover {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.7;
+}
+#drum .red {
+  color: red;
+}
+
+#drum .drum {
+  outline: none;
+  border: 10px solid #D6E5FA;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 7px;
+  background-color: white;
+}
+
+/* Dice Roll */
+
+#dice .container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#dice .dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+#dice {
+  background-image: url("images/diceBg.jpg");
+}
+
+#dice h1{
+  margin: 10px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ECCA3;
+}
+#dice h2 {
+  color: #808080;
+}
+#dice p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#dice img {
+  width: 80%;
+}

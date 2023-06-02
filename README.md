@@ -1,2 +1,2 @@
 # GameSpace
-Website with random games.
+Website with random games developed.
